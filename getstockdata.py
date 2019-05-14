@@ -1,4 +1,3 @@
-#!/home/jones/anaconda3/bin/python3
 # this is a class file to grab Yahoo Finance data. This file is not executable
 # ver 3.0
 
@@ -6,9 +5,9 @@ import os
 import pandas as pd
 import datetime as dt
 import pytz
-
 # import datatreader to import Yahoo Finance data
 from pandas_datareader import data as web
+
 
 # global variables that can be reused
 tz = pytz.timezone('America/New_York')
