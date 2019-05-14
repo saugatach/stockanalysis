@@ -1,4 +1,4 @@
-# stockanalysis
+# How to run the plotting code - stockanalysis
 
 To run the code use
 
@@ -11,10 +11,20 @@ will not work with pandas-datareader==0.6.0
 If you have pandas-datareader==0.6.0 installed then either uninstall 0.6.0 and 
 install 0.5.0 or create a conda environment with pandas-datareader==0.5.0
 
+# How to use the class file getstockdata() 
 
+```
+# import the class file (needs to be in the same directory)
+import getstockdata as gd
+tickr='FB'
+# initialize instance of the class by passing the stock ticker
+tckrobj = gd.GetStockData(tickr)
+startdate = dt.datetime(2017, 1, 5)
+# call getdata() method to access the financial data
+stock = tckrobj.getdata(startdate, today)
+```
 
-
-Common errors:
+# Common errors:
 
 1. Dateutil errors
 
